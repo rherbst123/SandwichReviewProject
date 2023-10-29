@@ -1,0 +1,31 @@
+<h1>List of Reviews </h1>
+
+
+    <table cellspacing = "0" cellPadding = "1" border="5">
+        <tr>
+            <td>User</td>
+            <td>Sandwich Shop</td>
+            <td>Sandwich Name</td>
+            <td>Review</td>
+            <td>Stars</td>
+           
+        </tr>
+    
+        <tr *ngFor="let review of reviews">
+    
+            <td>{{review.user}}</td>
+    
+            <td>{{review.shop}}</td>
+
+            <td>{{review.name}}</td>
+
+            <td>{{review.review}}</td>
+
+            <td>{{review.stars}}</td>
+    
+    
+        </tr>
+    
+    </table>
+    
+    <button class="main" routerLink= "/shoplist">Back To Shops</button>

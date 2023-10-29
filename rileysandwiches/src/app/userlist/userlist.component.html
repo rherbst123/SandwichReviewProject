@@ -1,0 +1,21 @@
+<h1>Users </h1>
+
+
+    <table cellspacing = "0" cellPadding = "1" border="5">
+        <tr>
+            <td>UserName</td>
+            <td>Password</td>
+        </tr>
+    
+        <tr *ngFor="let user of user">
+    
+            <td>{{user.user}}</td>
+    
+            <td>{{user.pass}}</td>
+    
+    
+        </tr>
+    
+    </table>
+    
+    <button class="main" routerLink= "/shoplist">Back To Shops</button>

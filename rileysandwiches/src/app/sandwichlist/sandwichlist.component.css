@@ -1,0 +1,36 @@
+table{
+    border-collapse: collapse;
+        margin: 10px 0;
+        font-size: 2em;
+        min-width: 600px;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        
+        font-style: italic;
+}
+tr:hover {background-color: lightblue;}
+
+h1{
+    background-image: linear-gradient(blue,lightgreen);
+    margin: 10px 0;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+
+}
+button{
+    background-image: linear-gradient(lightgreen, blue);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+
+

@@ -1,0 +1,33 @@
+<h1>Add A shop and sandwich to be reviewed
+    
+</h1>
+<form (ngSubmit)="onSubmit()" novalidate #myform="ngForm">
+    <div>Add a shop and sandwich</div>
+
+    <div style="color:red" *ngIf="shopAlreadyExists">
+        Shop has already been entered
+    </div>
+
+    Shop Name: <input type="text" name="shop" [(ngModel)]="sandwich.shop"> <p>
+    
+    Sandwich Name: <input type="text" name="name" [(ngModel)]="sandwich.name"> <p>
+    
+    Shop Hood: <input type="text" name="hood" [(ngModel)]="sandwich.hood"> <p>
+
+    Sandwich Description: <input type="text" name="description" [(ngModel)]="sandwich.description"> <p>
+
+    User: <input type="text" name="user" [(ngModel)]="sandwich.user"> <p>
+    
+    
+        <input type="submit" [disabled]="!myform.form.valid" value="Add Shop">
+        <input type="reset" value="Start Over">
+        <p>
+    
+    
+        
+    
+        <a class="main" routerLink= "/shoplist">Back to the shop list</a>
+    
+
+
+</form>   

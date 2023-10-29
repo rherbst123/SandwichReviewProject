@@ -1,0 +1,24 @@
+<h1>Sandwiches!</h1>
+
+<table cellspacing = "0" cellPadding = "1" border="5">
+    <tr>
+       <td> Sandwichlist </td>
+       <td> Sandwich Description</td>
+    </tr>
+<tr *ngFor="let sandwich of sandwiches">
+    
+    <td><a  [routerLink]="['/reviews',sandwich.name]">{{sandwich.name}}</a></td>
+    <td>{{sandwich.description}}</td>
+
+
+</tr>
+
+</table>
+<p>
+<button class="main" routerLink="/shoplist">Back to the Shops!</button> 
+<button class="main" routerLink="/listoreviews">List of reviews</button>
+
+          
+</p>
+
+  
